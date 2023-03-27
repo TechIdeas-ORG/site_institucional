@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: calibri;
+    
+}
+body{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), #00ff4446),
+    url('../img/backgroundDiv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 nav a{
     color: white;
@@ -13,17 +22,22 @@ nav{
     align-items: center;
     font-size: 20px;
     height: 13vh;
-    background-color: rgb(0, 0, 0);
+    width:100vw;
+    position: fixed;
+    background-color:transparent;
     justify-content: space-between;
 }
 .navLinks{
     width: 40%;
 }
 .logo img{
+    margin-left: 20px;
+    margin-top: 20px;
     height: 130px;
     width: 130px;
 }
 .nav-list{
+    margin-right: 40px;
     list-style: none;
     display: flex;
 }
@@ -42,7 +56,6 @@ nav{
     border: black;
 }
 #prop{
-    background-image: url('../img/backgroundDiv.jpg');
     border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +64,7 @@ nav{
     display: flex;
     flex-direction:column;
     justify-content: space-around;  
-    background-color: linear-gradient(rgba(0, 0, 0, 0.225), none);
+    background-color: linear-gradient(rgba(0, 0, 0, 0.458), rgb(255, 255, 255));
 }
 #title{
     text-align: center;
@@ -77,8 +90,8 @@ nav{
     border: 1px solid green;
     width: 320px;
     height: 160px;
-    font-size: 50px;
-    border-radius: 30%;
+    font-size: 40px;
+    border-radius: 35%;
     margin-left: 10%;
     margin-bottom: 10%;
 }
