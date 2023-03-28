@@ -89,12 +89,12 @@ nav{
 .saibaMais{
     background-color: #00FF43;
     color: black;
-    border: 1px solid green;
+    border-radius: 20px;
     width: 320px;
-    height: 190px;
-    font-size: 35px;
-    border-radius: 25%;
+    height: 80px;
+    font-size: 30px;
+    border: black;
     margin-left: 10%;
     margin-bottom: 10%;
-
+    box-shadow: 1px 1px 5px 5px #00FF43;
 }
