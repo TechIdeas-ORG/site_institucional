@@ -21,6 +21,7 @@ nav{
     height: 13vh;
     width:100vw;
     position: fixed;
+    z-index: 999;
     top: 0px;
     background-color: #111111;
     justify-content: space-between;
