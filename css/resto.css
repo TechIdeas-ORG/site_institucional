@@ -43,7 +43,7 @@ nav{
     letter-spacing: 3px;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 25px;
 }
 .contato{
@@ -55,7 +55,7 @@ nav{
     font-size: 18px;
     font-weight: 700;
     border: black;
-}
+}   
 
 .container{
     padding-left: 84px;
@@ -71,8 +71,8 @@ nav{
 .page-title h1{
     color: white;
     font-style: normal;
-    font-weight: 900;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 30px;
     margin-bottom: 12px;
     text-transform: uppercase;
 }
