@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" );
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #1C1C1C;
+    background-size: cover;
+    overflow: auto;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 13vh;
+    width:100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    background-color: #111111;
+    justify-content: space-between;
+}
+.navLinks{
+    width: 40%;
+}
+.logo img{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.nav-list{
+    margin-right: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 25px;
+}
+.contato{
+    background-color: #00FF43;
+    color: black;
+    border-radius: 15px;
+    width: 180px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    border: black;
+}   
+
+.container{
+    padding-left: 84px;
+    padding-right: 84px;
+    margin-top: 8vh;
+}
+
+.page-title{
+    width: max-content;
+    margin-top: calc(13vh + 35px);
+}
+
+.page-title h1{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.page-title div{
+    width: 35%;
+    height: 9px;
+    background: #0CE817;
+    border-radius: 20px;
+}
+
+/* Nosso Produto */
+
+.green-line {
+    background-color: #0CE817;
+    min-height: 90px;
+    padding-right: 140px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.green-line h1{
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-left: 320px;
+}
+
+.green-line img{
+    width: 200px;
+    position: absolute;
+    z-index: 4;
+    left: 5%;
+}
+
+.box1{
+    width: 80%;
+    height: 180px;
+    border-top: solid 5px white;
+    border-right: solid 5px white;
+
+    position: relative;
+    left: 100px;
+    z-index: 1;
+}
+
+.box2{
+    width: 20%;
+    height: 120px;
+
+    position: relative;
+    z-index: 2;
+    left: 267px;
+
+    border-right: solid 5px white;
+    border-bottom: solid 5px white;
+    border-top: solid 5px #1C1C1C;
+    background-color: #1C1C1C;
+}
+
+.box2 span{
+    font-size: 132px;
+    color: white;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48;
+
+    position: relative;
+    left: -54px;
+    bottom: calc(-100% + 63px);
+    z-index: 2;
+}
+
+.box3 {
+    width: 60%;
+    height: 120px;
+    
+    position: relative;
+    left: 95px;
+
+    border-top: solid 5px white;
+    border-right: solid 5px white;
+}
+
+.box3 button{
+    position: relative;
+    bottom: -50%;
+    right: -80%;
+
+    width: 200px;
+    height: 70px;
+
+    background: #0DFFB6;
+    border: 5px solid #FFFFFF;
+    border-radius: 33px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cell-box {
+    max-width: 450px;
+    height: 75px;
+    position: absolute;
+    z-index: 3;
+    background: #0CE817;
+    border-radius: 0px 55px 55px 0px;
+    border-top: solid 5px #1C1C1C;
+    padding-right: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.cell-box p {
+    width: 50%;
+    font-size: 25px;
+}
+
+.cell-box img{
+    bottom: -120%;
+    left: -5%;
+    position: relative;
+}
+
+.div-simular{
+    background-color: #0CE817;
+    width: 650px;
+    height: 50vh;
+    position: absolute;
+    right: 50px;
+    z-index: -1;
+    bottom: -18vh;
+    border-radius: 33px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.div-simular p{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 50%;
+
+    font-size: 26px;
+}
+
+.div-simular img{
+    margin-left: 20px;
+
+    width: 257px;
+}
