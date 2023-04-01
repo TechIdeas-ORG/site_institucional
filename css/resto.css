@@ -7,7 +7,7 @@
 body{
     background-color: #1C1C1C;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 nav a{
     color: white;
@@ -83,5 +83,5 @@ nav{
     height: 9px;
     background: #0CE817;
     border-radius: 20px;
-    margin-bottom: 25px
+    margin-bottom: 30px;
 }
