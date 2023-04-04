@@ -29,11 +29,34 @@
             </div>
             <div class="inputs">
                 Nome <input type="text" id="ipt_nome"><br><br>
-                E-mail <input type="text" id="ipt_cnpj"><br><br>
-                Senha <input type="text" id="ipt_rua"><br><br>
-                <button>Cadastrar-se</button>
+                E-mail <input type="text" id="ipt_email"><br><br>
+                Senha <input type="password" id="ipt_senha"><br><br>
+                <button onclick="verify()">Cadastrar-se</button>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script>
+    function verify(){
+        nome = ipt_nome.value;
+        email = ipt_email.value;
+        senha = ipt_senha.value;
+        erro = false;
+        if(nome.length < 3){
+            alert("Por favor, insira um nome válido")
+            erro = true;
+        }
+        if(email.startsWith('@gmail.com') || email.startsWith('@outlook.com') || email.startsWith('@hotmail.com') || email.length < 10){
+            alert("Por favor, insira um email válido")
+            erro = true;
+        }
+        if(senha.length < 7){
+            alert("Insira um senha válida");
+            erro = true;
+        }
+        if(erro == false){
+            alert('Cadastro feito')
+        }
+    }
+</script>
