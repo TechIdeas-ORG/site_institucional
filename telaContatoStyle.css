@@ -1,0 +1,153 @@
+/* OBS: Quando for uma tag não é necessário usar o . no começo */
+/* Inicio do Cabeçalho */
+*{
+    font-family: Arial;
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+.contato button{
+    background-color: #0CE876;
+}
+
+.contato input{
+    border-color: #00FF43;
+}
+
+
+.header{
+    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 70px;
+
+}
+
+ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteiner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.header .conteiner{
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.contactButtonStyle{
+    background-color: #00FF43;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* Fim do cabeçalho */
+
+/* Começo do banner */
+.banner{
+    width: 100%;
+    height: 434px;
+    background-size: cover;
+}
+
+.conteiner{
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.contato{
+    font-family: Josefin Sans;
+    Font-style: Bold;
+    Font-size: 25px;
+    Line-height: 25px;
+    Line-height: 100%;
+    align-items: Left;
+    Vertical-align: Top;
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+.endereco{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.whatzap{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.instagram{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.facebook{
+    display: flex;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mapImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato input{
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 5px;
+}
+
+.contato button{
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px ;
+    padding: 8px;
+}
+
+/* Rodapé */
+
+.rodape{
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
