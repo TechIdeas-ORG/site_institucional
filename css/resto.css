@@ -13,6 +13,10 @@ nav a{
     color: white;
     text-decoration: none;
 }
+nav img{
+    width: 90px;
+    height: 90px;
+}
 nav{
     display: flex;
     align-content: space-between;
