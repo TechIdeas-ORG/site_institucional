@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" );
 *{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
 body{
+    height: 100vh;
     background-color: #1C1C1C;
     background-size: cover;
-    overflow: hidden;
 }
 nav a{
     color: white;
@@ -26,6 +27,7 @@ nav{
     background-color: #111111;
     justify-content: space-between;
 }
+button {cursor: pointer;}
 .navLinks{
     width: 40%;
 }
@@ -46,6 +48,16 @@ nav{
     font-weight: 700;
     font-size: 18px;
     margin-right: 25px;
+}
+.nav-list li a:hover{
+    border-bottom: 3px #00FF43 solid;
+    transform: scale(2, 0.5);
+}
+.active {
+    border-bottom: 3px #00FF43 solid;
+    transform: scale(2, 0.5);
+    cursor: default;
+    opacity: 0.7;
 }
 .contato{
     background-color: #00FF43;
@@ -84,4 +96,10 @@ nav{
     background: #0CE817;
     border-radius: 20px;
     margin-bottom: 25px
+}
+
+.link-disable{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
