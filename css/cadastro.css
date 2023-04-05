@@ -1,8 +1,11 @@
+.body{
+    overflow:visible;
+}
 .formulario{
     margin: auto;
     margin-top: 10%;
     width: 60vh;
-    height: 60vh;
+    height: 95vh;
     background: linear-gradient(90deg, #0DFFB6 0%, #00FF43 100%);
     border-radius: 20px;
 }
