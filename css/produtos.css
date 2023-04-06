@@ -135,7 +135,7 @@
     position: absolute;
     right: 50px;
     z-index: -1;
-    bottom: 0vh; /* -18vh*/
+    bottom: -18vh; /* -18vh*/
     border-radius: 33px;
 
     display: flex;
