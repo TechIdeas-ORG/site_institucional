@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/resto.css">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div id="nav">
@@ -24,14 +24,13 @@
     <div class="formulario">
         <div class="centralizador">
             <div class="titulo">
-                <H1>Cadastro</H1>
+                <H1>Login</H1>
                 <div></div>
             </div>
             <div class="inputs">
-                Nome <input type="text" id="ipt_nome"><br><br>
                 E-mail <input type="text" id="ipt_email"><br><br>
                 Senha <input type="password" id="ipt_senha"><br><br>
-                <button onclick="verify()">Cadastrar-se</button>
+                <button onclick="verify()">Entrar</button>
             </div>
         </div>
     </div>
@@ -39,14 +38,9 @@
 </html>
 <script>
     function verify(){
-        nome = ipt_nome.value;
         email = ipt_email.value;
         senha = ipt_senha.value;
         erro = false;
-        if(nome.length < 3){
-            alert("Por favor, insira um nome válido")
-            erro = true;
-        }
         if(email.startsWith('@gmail.com') || email.startsWith('@outlook.com') || email.startsWith('@hotmail.com') || email.length < 10){
             alert("Por favor, insira um email válido")
             erro = true;
