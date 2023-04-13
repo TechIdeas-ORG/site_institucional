@@ -19,7 +19,7 @@ nav{
     align-content: space-between;
     align-items: center;
     font-size: 20px;
-    height: 13vh;
+    height: 10vh;
     width:100vw;
     position: fixed;
     z-index: 999;
@@ -34,7 +34,6 @@ button {cursor: pointer;}
 .logo img{
     margin-left: 20px;
     margin-top: 20px;
-
 }
 .nav-list{
     margin-right: 40px;
@@ -59,26 +58,65 @@ button {cursor: pointer;}
     cursor: default;
     opacity: 0.7;
 }
-.contato{
-    background-color: #00FF43;
-    color: black;
+.auth-container {
+    position: relative;
+    border: 3px solid #00FF43;
     border-radius: 15px;
     width: 180px;
     height: 35px;
     font-size: 18px;
     font-weight: 700;
-    border: black;
-}   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.auth-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.anim-auth{
+    background-color: #00FF43;
+
+    width: 90px;
+    height: 35px;
+
+    position: absolute;
+    z-index: -1;
+
+    transition: 1s;
+}
+
+.anim-auth.left{
+    margin-left: -182px;
+}
+
+.auth-container a:hover .anim-auth.left {
+    margin-left: 0px;
+}
+
+.anim-auth.right{
+    margin-right: -182px;
+}
+
+.auth-container a:hover .anim-auth.right {
+    margin-right: 0px;
+}
 
 .container{
     padding-left: 84px;
     padding-right: 84px;
-    margin-top: 13vh;
+    margin-top: 10vh;
 }
 
 .page-title{
     width: max-content;
-    margin-top: calc(13vh + 35px);
+    margin-top: calc(10vh + 35px);
 }
 
 .page-title h1{
@@ -103,3 +141,4 @@ button {cursor: pointer;}
     text-decoration: none;
     color: black;
 }
+
