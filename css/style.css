@@ -108,6 +108,14 @@ button {cursor: pointer;}
     margin-right: 0px;
 }
 
+.active-anim.right{
+    margin-right: 0px;
+}
+
+.active-anim.left{
+    margin-left: 0px;
+}
+
 .container{
     padding-left: 84px;
     padding-right: 84px;
