@@ -116,7 +116,7 @@ margin-left: 40px;
 display: flex;
 justify-content: center;
 align-items: center;
-position: fixed;
+position: absolute;
     width: 19px;
     height: 19px;
     border-radius: 20px ;
@@ -169,7 +169,7 @@ h2{
 display: flex;
 justify-content: center;
 align-items: center;
-position: fixed;
+position: absolute;
     width: 19px;
     height: 19px;
     border-radius: 20px ;

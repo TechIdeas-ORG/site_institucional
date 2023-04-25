@@ -105,7 +105,6 @@
 
         var lucroMensal = ganhoMensal - receitaMensal
 
-        var ganhoAnual = ganhoMensal * 12
 
         var rendimentoVestuario = receitaMensal * 19 / 100
         var rendimentoSupermercado = receitaMensal * 17 / 100
@@ -120,8 +119,22 @@
     div_alimenticio.innerHTML =`R$${rendimentoRestaurante.toFixed(2)}`
     div_cosmeticos.innerHTML = `R$${rendimentoCosmeticos.toFixed(2)}`
     }
-    else{
-        alert(`Verifique se o campo esta`)
+    else if (receitaMensal<0){
+        alert(`Verifique se o campo esta correto`)
+        div_geral.innerHTML = ``
+    div_vestuarios.innerHTML =``
+    div_mercados.innerHTML =``
+    div_alimenticio.innerHTML =``
+    div_cosmeticos.innerHTML = ``
     }
+    if (receitaMensal>=999999999){
+        alert(`Receita muito grande, contate o nosso suporte, para calcularmos corretamente`)
+        div_geral.innerHTML = ``
+    div_vestuarios.innerHTML =``
+    div_mercados.innerHTML =``
+    div_alimenticio.innerHTML =``
+    div_cosmeticos.innerHTML = ``
+    }
+
     }
 </script>
