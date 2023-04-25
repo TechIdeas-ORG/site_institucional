@@ -34,9 +34,11 @@
                 <div></div>
             </div>
             <div class="inputs">
-                Nome <input type="text" id="ipt_nome"><br><br>
-                E-mail <input type="text" id="ipt_email"><br><br>
-                Senha <input type="password" id="ipt_senha"><br><br>
+                Nome <input type="text" required id="ipt_nome"><br><br>
+                E-mail <input type="text" required id="ipt_email"><br><br>
+                Senha <input type="password" required id="ipt_senha"><br><br>
+                Token de Acesso <input type="text" required minlength="64" maxlength="64" id="ipt_token" placeholder="07e37f31e160c4d317c59535106a565c4ab5ef7e3ad73d4b0b90525b0ce765ca"><br><br>
+
                 <button onclick="verify()">Cadastrar-se</button>
             </div>
         </div>
@@ -45,10 +47,11 @@
 </html>
 <script>
     function verify(){
-        nome = ipt_nome.value;
-        email = ipt_email.value;
-        senha = ipt_senha.value;
-        erro = false;
+        var nome = ipt_nome.value;
+        var email = ipt_email.value;
+        var senha = ipt_senha.value;
+        var token = ipt_token.value;
+        var erro = false;
         if(nome.length < 3){
             alert("Por favor, insira um nome válido")
             erro = true;
@@ -59,6 +62,10 @@
         }
         if(senha.length < 7){
             alert("Insira um senha válida");
+            erro = true;
+        }
+        if(token.length != 64){
+            alert("Insira um token válido");
             erro = true;
         }
         if(erro == false){
