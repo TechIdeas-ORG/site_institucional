@@ -1,4 +1,6 @@
-
+.all-box{
+    height: 50vh;
+}
 .green-line {
     background-color: #0CE817;
     min-height: 90px;
@@ -43,8 +45,8 @@
 
     border-right: solid 5px white;
     border-bottom: solid 5px white;
-    border-top: solid 5px #1C1C1C;
-    background-color: #1C1C1C;
+    border-top: solid 5px transparent;
+    background-color: transparent;
 }
 
 .box2 span{
@@ -63,11 +65,11 @@
 }
 
 .box3 {
-    width: 60%;
+    width: 50%;
     height: 120px;
     
     position: relative;
-    left: 95px;
+    left: 267px;
 
     border-top: solid 5px white;
     border-right: solid 5px white;
@@ -142,8 +144,6 @@
     flex-direction: column;
 
     justify-content: space-between;
-
-
 }
 
 .div-simular p{
