@@ -45,7 +45,7 @@
 .redes-equipe {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     width: 100%;
     height: 40px;
 }
