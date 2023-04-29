@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Ideas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/telaContatoStyle.css">
+</head>
+
+<body>
+
+    <!-- Começo do header -->
+
+    <header>
+        <div id="nav">
+            <nav>
+                <a class='logo' href="index.html"><img src="img/Logo.png" alt="fotoEmpresa"></a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="telaContato.html" class="active">Contatos</a></li>
+                    <div class="auth-container">
+                        <a href="login.html"><div class="anim-auth left"></div>Login</a>
+                        <a href="cadastro.html">Registro<div class="anim-auth right"></div></a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fim do header -->
+
+    <!-- começo do banner -->
+
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="social">
+                <div class="endereco">
+                    <img src="img/map_icon.png" width="40px" height="40px">
+                    <p>Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP</p>
+                </div>
+
+                <div class="whatzap">
+                    <img src="img/whats_icon.png" width="40px" height="40px">
+                    <p>(11) 9987-6543</p>
+                </div>
+
+                <div class="instagram">
+                    <img src="img/instagram_icon.png" width="40px" height="40px">
+                    <p>@tech_Ideas</p>
+                </div>
+
+                <div class="facebook">
+                    <img src="img/facebook_icon.png" width="40px" height="40px">
+                    <p>Tech Ideas</p>
+                </div>
+            </div>
+
+            <div class="map">
+                <h3>Nossa meta é atender a tua melhor ideia!</h3>
+                <div class="mapImage">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1828.6397376779098!2d-46.66208606878548!3d-23.55840404566667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2b063f663%3A0xc567c0d16d0bc582!2sS%C3%A3o%20Paulo%20Tech%20School!5e0!3m2!1spt-BR!2sbr!4v1681344505326!5m2!1spt-BR!2sbr" width="340" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+            <div class="contato-container">
+                <h3>Fale Conosco</h3>
+                <input placeholder="nome" id="ipt_nome">
+                <input placeholder="e-mail" id="ipt_email">
+                <input placeholder="telefone" id="ipt_telefone">
+                <input placeholder="mensagem" id="ipt_mensagem">
+                <button onclick="envioMensagem()">Enviar mensagem</button>
+
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Tech Ideas © 2023</p>
+        </div>
+        
+</body>
+
+</html>
+
+<script>
+
+    function envioMensagem(){
+
+        var nome = ipt_nome.value
+        var email = ipt_email.value
+        var telefone = ipt_telefone.value
+        var mensagem = ipt_mensagem.value
+
+        var erro = "não"
+
+        if(email.endsWith("@gmail.com") || email.endsWith("@outlook.com") || email.endsWith("@hotmail.com")){}
+        else{alert("Por favor, verifique se você escreveu seu email corretamente, aceitamos apenas gmail, hotmail e outlook")
+        erro = "sim"}
+
+        if(email == "@gmail.com" || email == "@hotmail.com" || email == "@outlook.com")
+        {alert("Por favor, insira algo antes do @ na entrada do email.")
+        erro = "sim"}
+
+        if(nome == "")
+        {alert("Por favor insira o seu nome.")
+        erro = "sim"}
+
+        if(telefone=="")
+        {alert("Por favor, insira um número de telefone.")
+        erro = "sim"}
+
+        if(mensagem == "")
+        {alert("Verifique se você realmente digitou a sua mensagem.")
+        erro = "sim"}
+
+        if(erro == "sim")
+        {alert("Corrija o(s) dado(s) para prosseguirmos com o envio da sua mensagem.")}
+        else
+        {alert("Mensagem enviada! Agradecemos o seu contato! ;)")}
+    }
+</script>

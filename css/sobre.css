@@ -1,0 +1,81 @@
+.principal{
+    background-color: white;
+   width: 80%;
+   height: 28%;
+   border-radius: 10px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.principal .texto{
+    color: black;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    padding: 40px 25px;
+    border-radius: 10px;
+}
+
+/* .principal .texto p{
+width: 500px;
+} */
+
+.texto span {
+    font-weight: 700;
+}
+.principal .imagem{
+    background-image: url('../img/sobre_nos.jpeg');
+    background-size: cover;
+    width: 45.7%;
+    height: 100%;
+}
+
+.principal img {
+display: flex;
+width: 400px;
+height: 175px;
+}
+
+/* .social{
+    width: 1300px;
+    height: 40px;
+    
+} */
+
+.social .container{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.social .card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 5px;
+    background-color: #00ff43;
+    box-shadow: -9px 9px 0px 0px #0a600e;
+    border-radius: 8px;
+}
+
+.card p{
+    color: white;
+}
+
+.card h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.card li{
+    color: white;
+}
+
+/* .card span{
+    font-weight: 600;
+} */

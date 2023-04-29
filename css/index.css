@@ -46,15 +46,7 @@ nav{
     margin-left: 16px;
     margin-right: 32px;
 }
-.contato{
-    background-color: #00FF43;
-    color: black;
-    border-radius: 20px;
-    width: 160px;
-    height: 40px;
-    font-size: 18px;
-    border: black;
-}
+
 #prop{
     border: 1px solid black;
     background-repeat: no-repeat;
