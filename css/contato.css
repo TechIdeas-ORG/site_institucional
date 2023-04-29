@@ -1,31 +1,3 @@
-/* OBS: Quando for uma tag não é necessário usar o . no começo */
-/* Inicio do Cabeçalho */
-p{
-    color: white;
-}
-
-h3{
-    color: white;
-}
-
-body {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back_contato.jpg);
-    background-position: center;
-}
-
-.container{
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
 .contactButtonStyle{
     background-color: #00FF43;
     padding: 10px;
@@ -38,10 +10,17 @@ a{
 
 /* Começo do banner */
 .banner{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back_contato.jpg);
+    background-position: center;
     width: 100%;
-    height: calc(100% - (70px + 45px)); /* 100% altura da tela - (altura do header + altura do footer) */ 
+    height: 100vh; 
     background-size: cover;
-    
+    color: white;
+}
+
+.banner .container{
+    height: 100%;
+    justify-content: space-around;
 }
 
 .contato-container{
@@ -55,29 +34,23 @@ a{
     flex-direction: column;
 }
 
-.social{
+.social-contato{
     display: flex;
     width: 25%;
     flex-direction: column;
 }
 
-.endereco{
+.social-infos{
     display: flex;
-    margin-bottom: 15px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
+.social-infos img{
+    object-fit: cover;
 
-.whatzap{
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.instagram{
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.facebook{
-    display: flex;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 .map{
     display: flex;
@@ -108,17 +81,4 @@ a{
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px ;
     padding: 8px;
-}
-
-/* Rodapé */
-
-.rodape{
-    width: 100%;
-    height: 45px;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: absolute;
-    bottom: 0px;
 }
