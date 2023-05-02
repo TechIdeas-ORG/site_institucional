@@ -1,9 +1,9 @@
 .ret-branco {
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     width: 253px;
-    height: 400px;
-    left: 77px;
-    top: 187px;
 
     background: #FFFFFF;
     border-radius: 15px 0px 0px 15px;
