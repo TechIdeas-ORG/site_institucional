@@ -122,6 +122,10 @@
     cursor: pointer;
     color: white;
 }
+.card1 h6 {
+    cursor: pointer;
+    color: white;
+}
 
 .card h5 {
     position: absolute;
@@ -180,4 +184,43 @@
     border-radius: 20px;
     margin-left: 550px;
 
+}
+
+.exclamacao{
+    width: 7rem;
+    height: 20rem;
+    position: absolute;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-symbols-outlined{
+    font-size: 50px; 
+    color: #3BDB43;
+    background-color: transparent;
+    border: 0;
+    height: 3rem;
+    
+    top: 2rem;
+    right: 5rem;
+    justify-content: center;
+}
+
+.msg_exclamacao{
+    background-color: #FFFFFF;
+    color:black;
+    border-radius:9px;
+    border:0.7px solid #0CE817;
+    height: 14rem;
+    width: 7rem;
+    text-align: center;
+    margin-top: 3rem;
+
+    display:none;
+}
+
+.msg_exclamacao p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 2rem;
 }
