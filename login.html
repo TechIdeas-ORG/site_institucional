@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="nav-container">
+        <nav class="index-nav" id="nav">
+            <a class='logo' href="#index"><img src="img/semfundox2.png" alt="fotoEmpresa"></a>
+            <ul class="nav-list">
+                <li><a href="index.html#index">Home</a></li>
+                <li><a href="index.html#sobreNos">Sobre Nós</a></li>
+                <li><a href="index.html#equipe">Equipe</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#calculadora">Calculadora</a></li>
+                <li><a href="index.html#contato">Contatos</a></li>
+                <div class="auth-container">
+                    <a href="login.html">
+                        <div class="anim-auth left"></div>Login
+                    </a>
+                    <a href="cadastro.html">Registro<div class="anim-auth right"></div></a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="formulario">
+        <div class="centralizador">
+            <div class="titulo">
+                <H1>Login</H1>
+                <div></div>
+            </div>
+            <div class="inputs">
+                E-mail <input type="text" id="ipt_email"><br><br>
+                Senha <input type="password" id="ipt_senha"><br><br>
+                <button onclick="verify()">Entrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function verify(){
+        email = ipt_email.value;
+        senha = ipt_senha.value;
+        erro = false;
+        if(email.startsWith('@gmail.com') || email.startsWith('@outlook.com') || email.startsWith('@hotmail.com') || email.length < 10){
+            alert("Por favor, insira um email válido")
+            erro = true;
+        }
+        if(senha.length < 7){
+            alert("Insira um senha válida");
+            erro = true;
+        }
+        if(email == 'admin@techideas.com' && senha == 'admin123' && !erro){
+            window.location.href = 'https://techideas-org.github.io/SMFP/';
+        }
+    }
+</script>
