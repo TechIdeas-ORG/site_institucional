@@ -12,7 +12,7 @@ body{
 }
 section{
     min-height: 100vh;
-    padding-top: 20px;
+    padding-top: calc(10vh + 55px);
     padding-bottom: 20px;
 }
 section:first-of-type {
@@ -146,22 +146,20 @@ button {cursor: pointer;}
 }
 
 .container{
-    padding-left: 84px;
-    padding-right: 84px;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .page-title{
     width: max-content;
-    margin-top: calc(10vh + 35px);
 }
 
 .page-title h1{
     color: white;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 30px;
     margin-bottom: 12px;
-    text-transform: uppercase;
 }
 
 .page-title div{
@@ -182,7 +180,14 @@ button {cursor: pointer;}
     display: flex;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+
 .center{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
