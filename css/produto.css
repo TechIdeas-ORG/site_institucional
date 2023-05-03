@@ -150,13 +150,16 @@
     width: 20px;
     height: 166px; /*100%*/
 
+    background: #0A600E;
+    box-shadow: 6px 0px 0px #084F0C;
+
     display: flex;
     align-items: end;
 
     transition: 1s;
 }
 
-.grafico::before{
+/*.grafico::before{
     content: '';
     position: absolute;
     z-index: 1;
@@ -181,7 +184,7 @@
 
     background: #0A600E;
     box-shadow: 6px 0px 0px #084F0C;
-}
+}*/
 
 .grafico span {
     color: white;
