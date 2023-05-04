@@ -27,7 +27,7 @@
                         <li><a href="#index">Home</a></li>
                         <li><a href="#sobreNos">Sobre Nós</a></li>
                         <li><a href="#equipe">Equipe</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#produto">Produtos</a></li>
                         <li><a href="#calculadora">Calculadora</a></li>
                         <li><a href="#contato">Contatos</a></li>
                         <div class="auth-container">
@@ -52,7 +52,7 @@
     
 
     <!--Sobre Nós-->
-    <section>
+    <section style="background-color: #0f0f0f;">
         <div class="page-title container" id="sobreNos">
             <h1>Sobre a Tech Ideas</h1>
             <div></div>
@@ -100,7 +100,7 @@
     
 
     <!--Equipe-->
-    <section style="background-color: #0f0f0f;">
+    <section>
         <div class="page-title container" id="equipe">
             <h1>Nosso Time</h1>
             <div></div>
@@ -142,53 +142,88 @@
            </div>
     </section>
 
-    <!--Produtos MARCAR COM BUG NA RESPONSIVIDADE-->
-    <section>
-        <div class="page-title container" id="produtos">
-        <h1>Principal Produto</h1>
-        <div></div>
-    </div>
+    <!--Produto-->
+    <section style="background-color: #0f0f0f;" class="produto flex-wrap" id="produto">
+        <div class="left-container container">
+            <div class="page-title">
+                <h1>Mapeamento de Fluxo</h1>
+                <div></div>
+            </div>
 
-    <div class="green-line container">
-        <img src="img/map.png">
-        <h1>Mapeamento dos focos de calor do ambiente para controle estratégico do fluxo de pessoas</h1>
+            <div class="overview">
+                <h1>SMFP Visão Geral</h1>
 
-    </div>
+                <p>Sistema de Mapeamento de Fluxo - SMFP - é um sistema feito para o monitoramento de cada ambiente do seu shopping. Utilizando estratégias a partir do mapeamento de fluxo de pessoas a sua empresa será capaz de reduzir gastos e gerar lucros.</p>
 
-    <div class="all-box">
-        <div class="box1">
-
+                <div class="text-line">
+                    <span>Lucros</span>
+                    <span>Até 70% A Mais<span style="opacity: 0.5;"> / Mês</span></span>
+                </div>
+                <div class="separator"></div>
+                <div class="text-line">
+                    <span>Preço</span>
+                    <span>XX%<span style="opacity: 0.5;"> / Mês</span></span>
+                </div>
+                <div class="separator"></div>
+            </div>
         </div>
 
-        <div style="display: flex;">
-            <div class="cell-box">
-                <img src="img/cell.png">
-                <p>Visualização dos
-                    dados via web</p>
-            </div>
-            <div class="box2">
-                <span class="material-symbols-rounded">
-                    chevron_left
-                </span>
-            </div>
-
-            <div class="box3">
-                <a class="link-disable button" href="calculadora.html">
-                    <button>
-                        Simular Lucro
-                    </button>
-                </a>
-                <div class="div-simular">
-                    <p>Nossa equipe irá instalar e oferecer suporte</p>
-                    <img src="img/produto-img1.png">
+        <div class="flex right-container container">
+            <div class="flex">
+                <div class="ambiente center">
+                    <div class="num left-num center">
+                        <span>1</span>
+                    </div>
+                    <div id="ambiente1" class="ball">
+                        
+                    </div>
+                </div>
+                <div class="ambiente center">
+                    <div class="num right-num center">
+                        <span>2</span>
+                    </div>
+                    <div id="ambiente2"  class="ball">
+                        
+                    </div>
                 </div>
             </div>
+            <div class="flex">
+                <div class="ambiente center">
+                    <div class="num left-num center">
+                        <span>3</span>
+                    </div>
+                    <div id="ambiente3" class="ball">
+                        
+                    </div>
+                </div>
+                <div class="ambiente center">
+                    <div class="num right-num center">
+                        <span>4</span>
+                    </div>
+                    <div id="ambiente4" class="ball">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="light-room center">
+                <span class="grafY">FLUXO</span>
+                <div class="flex" style="column-gap: 46px; align-items: flex-end; height: 166px;">
+                    <div class="grafico" id="graf1"><span>1</span></div>
+                    <div class="grafico" id="graf2"><span>2</span></div>
+                    <div class="grafico" id="graf3"><span>3</span></div>
+                    <div class="grafico" id="graf4"><span>4</span></div>
+                </div>
+                <span class="grafX">Ambientes</span>
+            </div>
+
+            
+
         </div>
-    </div>
     </section>
 
     <!--Calculadora-->
-    <section style="background-color: #0f0f0f;">
+    <section>
         <div class="page-title container" id="calculadora">
             <h1>Simulador</h1>
             <div></div>
@@ -326,5 +361,6 @@
 
 </html>
 <script src="js/navbar.js"></script>
+<script src="js/produto.js"></script>
 <script src="js/calculadora.js"></script>
 <script src="js/contato.js"></script>
