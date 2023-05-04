@@ -9,21 +9,33 @@ const elements = {
         grafico: graf1,
         ambiente: ambiente1,
         valor: Math.floor(Math.random() * (MAX - MIN)) + MIN,
+        // Gerando dados Randomicos, para ilustracao do grafico!
+        // math.floor e uma funcai para arredondar numeros decimais
+        // math.radnom gera numero aleatorios entre 0 e 1
     },
     1: {
         grafico: graf2,
         ambiente: ambiente2,
         valor: Math.floor(Math.random() * (MAX - MIN)) + MIN,
+        // Gerando dados Randomicos, para ilustracao do grafico!
+        // math.floor e uma funcai para arredondar numeros decimais
+        // math.radnom gera numero aleatorios entre 0 e 1
     },
     2: {
         grafico: graf3,
         ambiente: ambiente3,
         valor: Math.floor(Math.random() * (MAX - MIN)) + MIN,
+        // Gerando dados Randomicos, para ilustracao do grafico!
+        // math.floor e uma funcai para arredondar numeros decimais
+        // math.radnom gera numero aleatorios entre 0 e 1
     },
     3: {
         grafico: graf4,
         ambiente: ambiente4,
         valor: Math.floor(Math.random() * (MAX - MIN)) + MIN,
+        // Gerando dados Randomicos, para ilustracao do grafico!
+        // math.floor e uma funcai para arredondar numeros decimais
+        // math.radnom gera numero aleatorios entre 0 e 1
     },
 }
 
